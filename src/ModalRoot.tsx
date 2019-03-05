@@ -36,7 +36,7 @@ export const ModalRoot = memo(
           return <Component key={key} />;
         })}
       </Container>,
-      document.body
+      typeof document !== 'undefined' && document.body
     );
   }
 );
